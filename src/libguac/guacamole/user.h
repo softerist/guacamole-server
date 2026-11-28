@@ -574,8 +574,9 @@ void guac_user_free(guac_user* user);
  *
  * @return
  *     Zero if the user's Guacamole connection was successfully handled and
- *     the user has disconnected, or non-zero if an error prevented the user's
- *     connection from being handled properly.
+ *     the user has disconnected, or non-zero if the user disconnected during
+ *     the handshake or an error prevented the user's connection from being
+ *     handled properly.
  */
 int guac_user_handle_connection(guac_user* user, int usec_timeout);
 
